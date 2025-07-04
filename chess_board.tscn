@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://c1abds8l4r7c8"]
+
+[ext_resource type="Script" uid="uid://cxcfc6q1uvps5" path="res://main.gd" id="1_guywq"]
+
+[node name="MainScene" type="Node2D"]
+
+[node name="ChessBoard" type="Node2D" parent="."]
+
+[node name="Rook" type="Sprite2D" parent="."]
+script = ExtResource("1_guywq")
