@@ -5,5 +5,8 @@ func _ready():
 	var texture = ImageTexture.create_from_image(imported_resource)
 	self.texture = texture
 	
-func _is_pressed():
-	print("erm, what the signa")
+func _input(event):
+	if event is InputEventMouseButton:
+		print("Mouse Click/Unclick at: ", event.position)
+	elif event is InputEventMouseMotion:
+		print("Mouse Motion at: ", event.position)
